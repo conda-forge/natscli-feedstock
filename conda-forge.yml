@@ -5,3 +5,16 @@ github:
 conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
+
+provider:
+  linux_aarch64: default
+  linux_ppc64le: default
+  osx_arm64: default
+  win_arm64: default # optional, see below
+
+build_platform: # cross-compile from x86 runners (optional, see below)
+  linux_aarch64: linux_64
+  linux_ppc64le: linux_64
+  osx_arm64: osx_64
+
+test: native_and_emulated

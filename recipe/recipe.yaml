@@ -13,7 +13,7 @@ source:
   sha256: 832f2fcd53de5eceeb9d497ab603cbf32698646dfe156d23b70553e40eb1438b
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       GOTOOLCHAIN: local
